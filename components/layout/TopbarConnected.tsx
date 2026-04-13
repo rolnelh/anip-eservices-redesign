@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import NotificationBell from "@/components/ui/NotificationBell";
+
 
 const user = {
     nom: "HOUNDAGNON",
@@ -37,6 +39,9 @@ export default function TopbarConnected() {
                     Services et coûts
                 </button>
             </div>
+
+            <NotificationBell />
+
 
             <div className="relative">
                 <button

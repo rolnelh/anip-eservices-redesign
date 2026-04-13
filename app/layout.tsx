@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import ServiceWorkerRegister from "@/components/ui/ServiceWorkerRegister";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -18,6 +19,13 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "ANIP — E-Services | République du Bénin",
   description: "Plateforme officielle des services d'identification des personnes",
+  manifest: "/manifest.json",
+  themeColor: "#0d1b35",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "ANIP",
+  },
 };
 
 export default function RootLayout({
@@ -30,6 +38,8 @@ export default function RootLayout({
       <body className="font-sans bg-slate-50 text-navy">
         {children}
         <Analytics />
+        <ServiceWorkerRegister />
+
 
       </body>
     </html>

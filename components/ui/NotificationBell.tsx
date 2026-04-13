@@ -25,7 +25,6 @@ export default function NotificationBell() {
         }
     }
 
-    // Simuler une notification de document prêt
     function simulateNotification() {
         if (permission === "granted") {
             new Notification("Document prêt ✓", {
@@ -39,7 +38,7 @@ export default function NotificationBell() {
     return (
         <button
             onClick={permission === "granted" ? simulateNotification : requestPermission}
-            className="relative w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+            className="relative w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
             title={permission === "granted" ? "Notifications activées" : "Activer les notifications"}
         >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"

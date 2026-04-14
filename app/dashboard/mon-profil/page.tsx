@@ -33,7 +33,7 @@ export default function ProfilPage() {
             <div className="flex items-start justify-between">
                 <div>
                     <h1 className="font-playfair text-[22px] font-semibold text-navy leading-tight">
-                        Mon profil
+                        Mon Profil
                     </h1>
                     <p className="text-[13px] text-slate-600 mt-1">
                         Vos données d'identification personnelle

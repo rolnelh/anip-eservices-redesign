@@ -38,13 +38,13 @@ export default function Sidebar() {
     const pathname = usePathname();
 
     return (
-        <div className="w-full bg-navy-light flex flex-col py-4 h-full overflow-y-auto">
+        <div className="w-full bg-navy-light flex flex-col py-8 h-full overflow-y-auto">
 
             {navItems.map((group) => (
                 <div key={group.section}>
-                    <p className="text-[9px] font-semibold uppercase tracking-[0.12em] text-slate-700 px-[22px] pt-4 pb-2">
+                    {/* <p className="text-[9px] font-semibold uppercase tracking-[0.12em] text-slate-700 px-[22px] pt-4 pb-2">
                         {group.section}
-                    </p>
+                    </p> */}
                     {group.items.map((item) => {
                         const isActive = pathname === item.href;
                         return (

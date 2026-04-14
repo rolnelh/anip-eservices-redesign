@@ -29,7 +29,6 @@ export default function DashboardPage() {
     return (
         <div className="flex flex-col gap-6 mt-10">
 
-            {/* En-tête */}
             <div className="flex items-start justify-between">
                 <div>
                     <h1 className="font-playfair text-[20px] md:text-[22px] font-semibold text-navy leading-tight">
@@ -56,10 +55,8 @@ export default function DashboardPage() {
             <HeroBanner />
             <StatsRow />
 
-            {/* Grille inférieure */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-                {/* Dernière demande */}
                 <div className="bg-white rounded-xl border border-slate-200 overflow-hidden">
                     <div className="flex items-center justify-between px-5 py-4 border-b border-slate-100">
                         <p className="text-[13px] font-semibold text-navy">Dernière demande</p>

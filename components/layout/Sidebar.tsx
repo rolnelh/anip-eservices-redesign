@@ -57,7 +57,7 @@ export default function Sidebar() {
                                         : "border-transparent hover:bg-white/5 hover:border-gold/20"
                                     }`}
                             >
-                                <span className={`text-[13px] ${isActive ? "text-gold font-medium" : "text-slate-500"}`}>
+                                <span className={`text-[13px] ${isActive ? "text-gold font-medium" : "text-white"}`}>
                                     {item.label}
                                 </span>
                                 {item.badge && (

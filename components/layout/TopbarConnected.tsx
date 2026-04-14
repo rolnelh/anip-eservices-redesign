@@ -26,16 +26,16 @@ export default function TopbarConnected() {
                 </p>
             </div>
             <div className="hidden lg:flex items-center gap-6">
-                <button className="text-slate-400 text-[12px] font-medium uppercase tracking-wider hover:text-white transition-colors">
+                <button className="text-white text-[12px] font-medium uppercase tracking-wider hover:text-white transition-colors">
                     Centre de vote
                 </button>
-                <button className="text-slate-400 text-[12px] font-medium uppercase tracking-wider hover:text-white transition-colors">
+                <button className="text-white text-[12px] font-medium uppercase tracking-wider hover:text-white transition-colors">
                     Retrouver mon NPI
                 </button>
-                <button className="text-slate-400 text-[12px] font-medium uppercase tracking-wider hover:text-white transition-colors">
+                <button className="text-white text-[12px] font-medium uppercase tracking-wider hover:text-white transition-colors">
                     Vérifier un document
                 </button>
-                <button className="text-slate-400 text-[12px] font-medium uppercase tracking-wider hover:text-white transition-colors">
+                <button className="text-white text-[12px] font-medium uppercase tracking-wider hover:text-white transition-colors">
                     Services et coûts
                 </button>
             </div>

@@ -76,7 +76,6 @@ export default function DashboardPage() {
                     </div>
                 </div>
 
-                {/* Documents récents */}
                 <div className="bg-white rounded-xl border border-slate-200 overflow-hidden">
                     <div className="flex items-center justify-between px-5 py-4 border-b border-slate-100">
                         <p className="text-[13px] font-semibold text-navy">Documents récents</p>

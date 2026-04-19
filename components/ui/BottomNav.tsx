@@ -61,21 +61,26 @@ export default function BottomNav() {
     const pathname = usePathname();
 
     return (
-        <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 flex md:hidden">
-            {navItems.map((item) => {
-                const isActive = pathname === item.href;
-                return (
-                    <Link
-                        key={item.href}
-                        href={item.href}
-                        className={`flex-1 flex flex-col items-center justify-center gap-1 py-3 transition-colors
-              ${isActive ? "text-gold" : "text-navy hover:text-slate-600"}`}
-                    >
-                        {item.icon}
-                        <span className="text-[10px] font-medium">{item.label}</span>
-                    </Link>
-                );
-            })}
+        <nav className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
+            <div className="bg-navy rounded-[40px] px-4 py-3 flex justify-around items-center shadow-lg">
+                {navItems.map((item) => {
+                    const isActive = pathname === item.href;
+                    return (
+                        <Link
+                            key={item.href}
+                            href={item.href}
+                            className={`flex flex-col items-center gap-1 transition-colors px-2
+               ${isActive
+                                    ? "text-gold bg-gold/10 rounded-2xl px-3 py-1"
+                                    : "text-slate-500 hover:text-slate-300"
+                                }`}
+                        >
+                            {item.icon}
+                            <span className="text-[9px] font-medium">{item.label}</span>
+                        </Link>
+                    );
+                })}
+            </div>
         </nav>
     );
 }
